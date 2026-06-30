@@ -2,9 +2,9 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21077055.svg)](https://doi.org/10.5281/zenodo.21077055)
 
-Profile-likelihood inference pipeline for the [QUALIPHIDE](https://arxiv.org/abs/1902.11927) FIR hidden-photon search. Generates Toy Monte Carlo pseudo-experiments and performs profile likelihood ratio (PLR) tests to compute sensitivity bands and 3σ discovery thresholds.
+Profile-likelihood inference pipeline for the QUALIPHIDE FIR hidden-photon search. The statistical methodology follows [arXiv:1902.11297](https://arxiv.org/abs/1902.11297). Generates Toy Monte Carlo pseudo-experiments and performs profile likelihood ratio (PLR) tests to compute sensitivity bands and 3σ discovery thresholds.
 
-This repository is the canonical public release for the paper analysis. Development history lives in [QUALIPHIDE-Inferences](https://github.com/WashU-Astroparticle-Lab/QUALIPHIDE-Inferences); experiment data and notebooks are in [qualiphide_thz](https://github.com/WashU-Astroparticle-Lab/qualiphide_thz).
+This repository is the canonical public release for the QUALIPHIDE FIR analysis. Development history lives in [QUALIPHIDE-Inferences](https://github.com/WashU-Astroparticle-Lab/QUALIPHIDE-Inferences); experiment data and notebooks are in [qualiphide_thz](https://github.com/WashU-Astroparticle-Lab/qualiphide_thz).
 
 ## Installation
 
@@ -74,7 +74,7 @@ results/                     Published summary CSVs (+ regenerated run outputs)
 
 ## Physics background
 
-The analysis follows [arXiv:1902.11927](https://arxiv.org/abs/1902.11927). Key symbols: χ (kinetic mixing), *m* (hidden photon mass), η (efficiency), μ<sub>b</sub> (background rate), *q* (profile likelihood ratio).
+The analysis follows [arXiv:1902.11297](https://arxiv.org/abs/1902.11297). Key symbols: χ (kinetic mixing), *m* (hidden photon mass), η (efficiency), μ<sub>b</sub> (background rate), *q* (profile likelihood ratio).
 
 ## Citation
 
