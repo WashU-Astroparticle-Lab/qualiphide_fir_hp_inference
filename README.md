@@ -1,6 +1,6 @@
 # qualiphide_fir_hp_inference
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21077055.svg)](https://doi.org/10.5281/zenodo.21077055)
 
 Profile-likelihood inference pipeline for the [QUALIPHIDE](https://arxiv.org/abs/1902.11927) FIR hidden-photon search. Generates Toy Monte Carlo pseudo-experiments and performs profile likelihood ratio (PLR) tests to compute sensitivity bands and 3σ discovery thresholds.
 
@@ -87,7 +87,7 @@ If you use this software, please cite:
   year         = {2026},
   publisher    = {Zenodo},
   version      = {0.1.0},
-  doi          = {10.5281/zenodo.XXXXXXX},
+  doi          = {10.5281/zenodo.21077055},
   url          = {https://github.com/WashU-Astroparticle-Lab/qualiphide_fir_hp_inference}
 }
 ```

@@ -10,4 +10,16 @@ authors:
     affiliation: Washington University in St. Louis
 repository-code: https://github.com/WashU-Astroparticle-Lab/qualiphide_fir_hp_inference
 license: BSD-3-Clause
-message: "If you use this software, please cite it using the metadata from this file."
+doi: 10.5281/zenodo.21077055
+message: "Please cite the Zenodo record when using this software."
+preferred-citation:
+  type: software
+  title: qualiphide_fir_hp_inference
+  version: 0.1.0
+  authors:
+    - family-names: Harris
+      given-names: Jacob
+    - family-names: Yuan
+      given-names: Lanqing
+  year: 2026
+  doi: 10.5281/zenodo.21077055
