@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: qualiphide_fir_hp_inference
-version: 0.1.0
+version: v0.1.0
 authors:
   - family-names: Harris
     given-names: Jacob
@@ -15,7 +15,7 @@ message: "Please cite the Zenodo record when using this software."
 preferred-citation:
   type: software
   title: qualiphide_fir_hp_inference
-  version: 0.1.0
+  version: v0.1.0
   authors:
     - family-names: Harris
       given-names: Jacob
