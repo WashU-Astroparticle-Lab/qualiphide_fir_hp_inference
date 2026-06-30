@@ -1,0 +1,30 @@
+{
+  "title": "qualiphide_fir_hp_inference",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "bsd-3",
+  "version": "0.1.0",
+  "creators": [
+    {
+      "name": "Harris, Jacob",
+      "affiliation": "Washington University in St. Louis"
+    },
+    {
+      "name": "Yuan, Lanqing",
+      "affiliation": "Washington University in St. Louis"
+    }
+  ],
+  "keywords": [
+    "dark photon",
+    "hidden photon",
+    "profile likelihood",
+    "QUALIPHIDE"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://arxiv.org/abs/1902.11927",
+      "relation": "isReferencedBy",
+      "resource_type": "publication-article"
+    }
+  ]
+}

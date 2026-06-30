@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+*.npy
+
+# Regenerated pipeline artifacts (summary CSVs at results/ root are committed)
+results/fit_results/
+results/ToyMC/
+results/sensitivity/
+results/three_sigma_discovery/
+results/coverage/
+results/*.png
+results/*.csv
+!results/sensitivity_band.csv
+!results/three_sigma_discovery.csv
+!results/discovery_thresholds.csv

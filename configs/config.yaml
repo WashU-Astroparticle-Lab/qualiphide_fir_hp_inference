@@ -1,0 +1,60 @@
+output_dir: results
+
+constant_params:
+    N_KID: 4 #number of in-focus KIDs
+    A_dish: 5.2e-3 #dish area (m^2)
+    rho_CDM: 0.45 #CDM energy density GeV/cm^3
+    alpha_sq: 0.666666666 #polarization factor (squared)
+    runtime: 21.68 #runtime in hours
+    chi_N_m_coeff: 5.6e-12 
+    
+nuisance_param_data:
+    sigma_factor_eta: 0.175 #ratio of error estimate in eta to initial eta Reference: https://github.com/WashU-Astroparticle-Lab/qualiphide_thz/blob/main/limits/efficiencies.ipynb
+
+chi_true: #true kinetic mixing parameters, used to generate ToyMC (presented in logspace)
+    - 1e-13
+    - 1e-10
+    - 30
+
+m_test: #test photon mass (eV), used to generate ToyMC (presented in logspace)
+    logspace: {start: 0.013, stop: 0.5, num: 100}
+    # 9 extras dropped because they collide with neighbouring logspace points
+    # under format_mass()'s 3-sig-fig rounding (would overwrite per-mass output files).
+    extra: [0.02961138, 0.03234092, 0.05583151, 0.07510373, 0.08519475, 0.09003349, 0.09445865, 0.1022, 0.10244049, 0.1029, 0.10885077, 0.12225034, 0.13035625, 0.13362342, 0.14375581, 0.15000067, 0.15711402, 0.18019104, 0.1854847 , 0.19330111, 0.2167917 , 0.22038973, 0.22651052, 0.23490593, 0.32150681, 0.35508843, 0.37460878, 0.38532016]
+
+cutoff: 0.013 #eV, No analysis is performed below this energy
+split_mu_b: 0.04 #eV, The background rate is split into two regions below and above this energy
+split: 0.07 #eV, The signal PDF is flattened above this energy
+maximum: 0.5 #eV, The upper energy limit of the analysis
+
+fit_bounds:
+    n_sigma_eta: 3    # eta bounded within ±3σ of ancillary Gaussian
+    n_sigma_r: 3      # resolution r bounded within ±3σ
+    n_sigma_mu_b: 5   # background rate bounded within ±5σ (must be positive)
+
+max_workers: 10 # max parallel processes (capped by available CPUs; env var QUALIPHIDE_WORKERS overrides)
+
+energy_data: #number of toy data sets to generate
+    n_toy: 1001
+
+chi_true_coverage:
+  - 0
+  - 5e-12
+  - 1e-11
+  - 2e-11
+  - 3e-11
+  - 4e-11
+  - 5e-11
+  - 6e-11
+  - 7e-11
+  - 8e-11
+  - 9e-11
+  - 1e-10
+
+m_test_coverage:
+  - 0.013
+  - 0.0231
+  - 0.0499
+  - 0.0732
+  - 0.130
+  - 0.341
